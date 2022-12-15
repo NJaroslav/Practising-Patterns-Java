@@ -1,9 +1,9 @@
 # Practising-Patterns-Java
 This is a simple GUI project that uses patterns such as MVC, Strategy, Visitor, Iterator
 
-Important: this project shows the use of patterns in a specific task, for familiarization, nothing more.
+Important: This project shows the use of patterns in a specific task, for familiarization, nothing more.
 
-##Description:
+## Description:
 
 - The model is a BitSet class, which is a sequence of zeros and ones.
 It represents an abstract sequence of natural numbers which is determined by the following rules:
