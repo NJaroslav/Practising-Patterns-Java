@@ -1,16 +1,13 @@
 package controller;
 
 import model.MySet;
-import strategy.CardinalityStrategy1;
-import strategy.CardinalityStrategy2;
+import strategy.CardinalityStrategyIterator;
+import strategy.CardinalityStrategyBase;
 import view.ViewCardinality;
 import view.ViewModel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class Controller extends JPanel {
     private final JButton addButton;
@@ -53,10 +50,10 @@ public class Controller extends JPanel {
         cardinalityButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                model.setCardinalityStrategy(new CardinalityStrategy1());
+                model.setCardinalityStrategy(new CardinalityStrategyIterator());
                 int size1 = model.getCardinalityByStrategy();
 
-                model.setCardinalityStrategy(new CardinalityStrategy2());
+                model.setCardinalityStrategy(new CardinalityStrategyBase());
                 int size2 = model.getCardinalityByStrategy();
 
                 viewCardinality.updateArea2(size1, size2);

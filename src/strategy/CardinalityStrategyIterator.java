@@ -3,7 +3,7 @@ package strategy;
 import iterator.MyIterator;
 import model.MySet;
 
-public class CardinalityStrategy1 implements CardinalityStrategy {
+public class CardinalityStrategyIterator implements CardinalityStrategy {
     @Override
     public int getCardinality(MySet mySet) {
         int count = 0;

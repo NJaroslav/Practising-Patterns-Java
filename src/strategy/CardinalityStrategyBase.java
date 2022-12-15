@@ -2,7 +2,7 @@ package strategy;
 
 import model.MySet;
 
-public class CardinalityStrategy2 implements CardinalityStrategy {
+public class CardinalityStrategyBase implements CardinalityStrategy {
 
     @Override
     public int getCardinality(MySet mySet) {
