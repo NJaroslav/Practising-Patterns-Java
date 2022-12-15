@@ -1,6 +1,6 @@
 package controller;
 
-import model.MySet;
+import model.BitSet;
 import strategy.CardinalityStrategyIterator;
 import strategy.CardinalityStrategyBase;
 import view.ViewCardinality;
@@ -12,11 +12,11 @@ import java.awt.event.ActionEvent;
 public class Controller extends JPanel {
     private final JButton addButton;
     private final JButton cardinalityButton;
-    private final MySet model;
+    private final BitSet model;
     private final ViewModel viewModel;
     private final ViewCardinality viewCardinality;
 
-    public Controller(MySet m, ViewModel vm, ViewCardinality vc) {
+    public Controller(BitSet m, ViewModel vm, ViewCardinality vc) {
         model = m;
         viewModel = vm;
         viewCardinality = vc;

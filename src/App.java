@@ -1,6 +1,6 @@
 import controller.Controller;
 import frame.Frame;
-import model.MySet;
+import model.BitSet;
 import view.ViewCardinality;
 import view.ViewModel;
 
@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class App {
     public static void main(String[] args) {
-        MySet model = new MySet();
+        BitSet model = new BitSet();
         ViewModel viewModel = new ViewModel(model);
         ViewCardinality viewCardinality = new ViewCardinality(model);
         Controller controller = new Controller(model, viewModel, viewCardinality);

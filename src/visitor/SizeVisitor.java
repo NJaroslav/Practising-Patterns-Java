@@ -1,14 +1,14 @@
 package visitor;
 
-import iterator.MyIterator;
-import model.MySet;
+import iterator.Iterator;
+import model.BitSet;
 
 public class SizeVisitor implements Visitor {
     int c = 0;
 
     @Override
-    public void visit(MySet set) {
-        MyIterator it = set.createMyIterator();
+    public void visit(BitSet set) {
+        Iterator it = set.createMyIterator();
         while (it.hasNext()) {
             c++;
         }

@@ -1,13 +1,13 @@
 package strategy;
 
-import iterator.MyIterator;
-import model.MySet;
+import iterator.Iterator;
+import model.BitSet;
 
 public class CardinalityStrategyIterator implements CardinalityStrategy {
     @Override
-    public int getCardinality(MySet mySet) {
+    public int getCardinality(BitSet mySet) {
         int count = 0;
-        MyIterator it = mySet.createMyIterator();
+        Iterator it = mySet.createMyIterator();
         while (it.hasNext()) {
             if (it.next() == 1) {
                 count++;

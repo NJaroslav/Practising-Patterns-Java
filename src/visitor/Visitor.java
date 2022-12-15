@@ -1,7 +1,7 @@
 package visitor;
 
-import model.MySet;
+import model.BitSet;
 
 public interface Visitor {
-    void visit(MySet set);
+    void visit(BitSet set);
 }

@@ -1,16 +1,14 @@
 package model;
 
-import iterator.MyIterable;
-import iterator.MyIterator;
+import iterator.IterableCollection;
+import iterator.Iterator;
 import strategy.CardinalityStrategy;
 import visitor.SizeVisitor;
 import visitor.Visitor;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 
-public class MySet implements MyIterable, Visited {
+public class BitSet implements IterableCollection, Visited {
 
     private final ArrayList<Integer> set = new ArrayList<>();
 
@@ -64,8 +62,8 @@ public class MySet implements MyIterable, Visited {
     }
 
     @Override
-    public MyIterator createMyIterator() {
-        return new MyIterator() {
+    public Iterator createMyIterator() {
+        return new Iterator() {
             private int pos = -1;
 
             @Override

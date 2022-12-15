@@ -1,13 +1,13 @@
 package view;
 
-import model.MySet;
+import model.BitSet;
 
 import javax.swing.*;
 
 public class ViewCardinality extends JTextArea {
-    private final MySet set;
+    private final BitSet set;
 
-    public ViewCardinality(MySet set) {
+    public ViewCardinality(BitSet set) {
         this.set = set;
         updateArea2(0, 0);
         this.setVisible(true);

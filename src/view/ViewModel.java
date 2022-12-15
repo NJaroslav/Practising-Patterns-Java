@@ -1,13 +1,13 @@
 package view;
 
-import model.MySet;
+import model.BitSet;
 
 import javax.swing.*;
 
 public class ViewModel extends JTextArea {
-    private final MySet set;
+    private final BitSet set;
 
-    public ViewModel(MySet set) {
+    public ViewModel(BitSet set) {
         this.set = set;
         updateArea1();
         this.setVisible(true);

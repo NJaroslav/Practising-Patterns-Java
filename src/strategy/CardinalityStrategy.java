@@ -1,7 +1,7 @@
 package strategy;
 
-import model.MySet;
+import model.BitSet;
 
 public interface CardinalityStrategy {
-    int getCardinality(MySet mySet);
+    int getCardinality(BitSet mySet);
 }
